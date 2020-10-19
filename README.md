@@ -12,11 +12,10 @@ You can raise:
 5) Zip files and more.
 You can create a repository, a folder as well and delete it without touching any important file.
 
-Why it is good -->
-1.1  Single file, there are no images, or css folders.
-1.2  Ajax based so it is fast, but doesn't break the back button.
-1.3  Allows drag and drop file uploads if the folder is writable by the webserver  More like Dropbox, and less like Windows Explorer.
-1.4  Works with Unicode file names.
+Why it is good:
+ Single file, there are no images, or css folders. Ajax based so it is fast, but doesn't break the back button.
+ Allows drag and drop file uploads if the folder is writable by the webserver  more like Dropbox, and less like Windows Explorer.
+ Works with Unicode file names.
 
 
 # Warning!!!
@@ -25,13 +24,13 @@ Why it is good -->
 3. Any of the following options will prevent this:
 Don't make the folder writable by the webserver.
 
-#LOGIN LATER -->
+# LOGIN LATER -->
 No file browser login created. 
 The login will be added to the project later. 
 The login username and password in the README.md file will also be added.
 
 
-#Attention!
+# Attention!
 Edit feature. 
 An extension of the initial project which lets you edit files and save them from the main php file.
 Works asynchronously with ajax requests.
