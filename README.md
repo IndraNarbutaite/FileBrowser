@@ -17,7 +17,7 @@ Why it is good -->
 1.2  Ajax based so it is fast, but doesn't break the back button.
 1.3  Allows drag and drop file uploads if the folder is writable by the webserver  More like Dropbox, and less like Windows Explorer.
 1.4  Works with Unicode file names.
-1.5.
+
 
 # Warning!!!
 1. Do not allow uploads on the public web.
