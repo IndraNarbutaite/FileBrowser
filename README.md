@@ -24,10 +24,15 @@ Why it is good:
 3. Any of the following options will prevent this:
 Don't make the folder writable by the webserver.
 
-# LOGIN LATER -->
-No file browser login created. 
-The login will be added to the project later. 
-The login username and password in the README.md file will also be added.
+# LOGIN 
+Adding simple login only password.
+Password : admin;
+Set $allow_upload = false
+Use a password $PASSWORD = 'some password'//come up with a new one for your password and change it to the desired index.php file.
+Use a .htaccess file with Apache, or auth_basic for nginx.
+Only use this on a private network.
+NOT INCLUDED LOGOUT SYSTEM.
+
 
 
 # Attention!
