@@ -11,7 +11,26 @@ $allow_show_folders = true; // Set to false to hide all subdirectories
 $disallowed_patterns = ['*.php'];  // must be an array.  Matching files not allowed to be uploaded
 $hidden_patterns = ['*.php','.*']; // Matching files hidden in directory index
 
-//login not available, i will try to add to project.
+//simple login whit password
+
+$PASSWORD = 'admin';  // Set the password, to access the file manager... (optional)
+
+if($PASSWORD) {
+
+	session_start();
+	if(!$_SESSION['_sfm_allowed']) {
+		// sha1, and random bytes to thwart timing attacks.  Not meant as secure hashing.
+		$t = bin2hex(openssl_random_pseudo_bytes(10));
+		if($_POST['p'] && sha1($t.$_POST['p']) === sha1($t.$PASSWORD)) {
+			$_SESSION['_sfm_allowed'] = true;
+			header('Location: ?');
+		}
+		echo '<html><body><form action=? method=post>PASSWORD:<input type=password name=p autofocus/></form></body></html>';
+		exit;
+	}
+}
+
+
 
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
